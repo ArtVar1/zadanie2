@@ -1,14 +1,14 @@
-package com.company;
-import java.util.Scanner;
-import java.util.Arrays;
-public class Main {
-
-    public static void main(String[] args) {
-        int number = 10;
-        while (number < 21) {
-            System.out.println(number);
-            number++;
-        }
-
-    }
+public static void main(String[] args)  {
+		System.out.println(fibonacci(12));
+	}
+	
+	public static int fibonacci(int n) {
+		if(n == 0) {
+			return 0;
+		}else if(n== 1){
+			return 1;
+		}else {
+			return fibonacci(n-1) + fibonacci(n-2);
+		}
+	}
 }
